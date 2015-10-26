@@ -1,0 +1,10 @@
+---
+layout: post
+---
+<div class="blog-page">
+  <h3 id="blog-title">{{page.title}}</h3>
+  <main>
+    <p class="meta">{{page.date | date_to_string}}<span class="location">&nbsp-&nbsp{{page.location}}</span></p>
+    {{content}}
+  </main>
+</div>

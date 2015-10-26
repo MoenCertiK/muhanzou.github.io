@@ -1,10 +1,17 @@
+@font-face {
+  font-family: roboto;
+  src: url(/Roboto-Thin.ttf); }
 body, h2, h3 {
-  font-family: 'Roboto', sans-serif;
+  font-family: roboto, sans-serif;
   font-weight: 100; }
 
-h2 {
-  font-size: 3rem;
+a {
   color: #0c090a; }
+
+#name {
+  font-size: 3rem;
+  color: #0c090a;
+  font-weight: 600; }
 
 h3 {
   color: #848482;
@@ -20,11 +27,11 @@ h3 {
 p {
   line-height: 1.5rem; }
 
-a {
+a.index-nav {
   text-decoration: none;
   color: #848482;
   border-bottom: 1px solid #ccc; }
-  a:hover {
+  a.index-nav:hover {
     color: #98afc7; }
 
 canvas {
@@ -34,6 +41,68 @@ canvas {
   width: 100%;
   height: 100%;
   pointer-events: none; }
+
+#site-nav {
+  color: #333;
+  text-align: center;
+  margin-top: 50px; }
+
+.nav-link {
+  text-decoration: none;
+  color: #848482;
+  font-size: 1.5rem; }
+  .nav-link:hover {
+    color: #98afc7; }
+
+#name-from-blog {
+  display: inline-block;
+  margin-right: 10px;
+  font-weight: 400;
+  font-size: 2.5rem; }
+
+#sub-name {
+  font-weight: 600;
+  text-decoration: none;
+  color: #333; }
+  #sub-name:hover {
+    color: #98afc7; }
+
+#blog-container {
+  text-align: center;
+  font-size: 1.2rem; }
+
+span.date {
+  margin-right: 16px;
+  font-size: 1rem;
+  color: #848482; }
+
+.blog-link {
+  text-decoration: none; }
+
+.posts {
+  width: 500px;
+  margin: 0 auto;
+  list-style: none;
+  text-align: left; }
+  .posts li {
+    padding: 3px 5px 5px 3px;
+    border-bottom: 1px solid #ccc; }
+
+#blog-title {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #0c090a;
+  margin-bottom: 0;
+  font-size: 1.5rem; }
+
+.blog-page {
+  font-family: Helvetica, Arial, sans-serif;
+  width: 700px;
+  margin: 0 auto;
+  text-align: justify; }
+
+p.meta {
+  color: #aaa;
+  margin: 5px auto; }
 
 * {
   margin: 0;

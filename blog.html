@@ -1,0 +1,14 @@
+---
+layout: post
+---
+
+<div id="blog-container">
+  <main>
+    <ul class="posts">
+      {% for post in site.posts %}
+        <li><span class="date">{{post.date | date_to_string}}</span><a class="blog-link" href="{{post.url}}">{{post.title}}</a></li>
+      {% endfor %}
+    </ul>
+  </main>
+</div>
+

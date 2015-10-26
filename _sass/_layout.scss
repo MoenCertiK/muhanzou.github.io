@@ -1,11 +1,19 @@
-body, h2, h3 {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 100;
+@font-face {
+  font-family: roboto;
+  src: url(/Roboto-Thin.ttf);
 }
 
-h2 {
+body, h2, h3 {
+  font-family: roboto, sans-serif;
+  font-weight: 100;
+}
+a {
+  color: #0c090a;
+}
+#name {
   font-size: 3rem;
   color: #0c090a;
+  font-weight: 600;
 }
 
 h3 {
@@ -25,7 +33,7 @@ p {
   line-height: 1.5rem;
 }
 
-a {
+a.index-nav {
   text-decoration: none;
   color: #848482;
   border-bottom: 1px solid #ccc;

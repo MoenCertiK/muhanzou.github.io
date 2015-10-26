@@ -44,3 +44,10 @@ function paint() {
 };
 document.onclick = paint;
 paint();
+
+// prevent repainting when clicking links
+Array.prototype.slice.call(document.getElementsByTagName("a")).forEach(function(a) {
+  a.addEventListener("click", function(e) {
+    e.stopPropagation();
+  });
+});
