@@ -67,9 +67,41 @@ span.date {
   width: 700px;
   margin: 0 auto;
   text-align: justify;
+
+  p.meta {
+    color: #aaa;
+    margin: 5px auto;
+  }
+
+  blockquote {
+    margin: 20px;
+    font-style: italic;
+  }
+
+  span.file-name {
+    border: 1px solid #bcc6cc;
+    border-radius: 5px;
+    background-color: #f5f7f8;
+    padding: 2px;
+  }
+
+  pre {
+    margin: -20px -10px;
+  }
+
+  .reference {
+    a {
+      padding-left: 20px;
+      text-decoration: none;
+      display: block;
+      color: #2b65ec;
+      &:hover {
+        color: #e77471;
+      }
+    }
+  }
 }
 
-p.meta {
-  color: #aaa;
-  margin: 5px auto;
+.space-for-foot {
+  height: 50px;
 }

@@ -3,6 +3,10 @@
   src: url(/Roboto-Thin.ttf);
 }
 
+body {
+  min-height: 500px;
+}
+
 body, h2, h3 {
   font-family: roboto, sans-serif;
   font-weight: 100;
