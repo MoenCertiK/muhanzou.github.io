@@ -52,7 +52,7 @@ Both should do the clone job. However, whenever you push code, the default user 
 </pre>
 Now you push code, the commit author would be your personal one, time to let people see how hard-working you are at leisure time!
 <br /><br />
-Please check these two pages for detailed information.
+<p>Please check these two pages for detailed information.</p>
 <p class="reference">
   <a href="http://code.tutsplus.com/tutorials/quick-tip-how-to-work-with-github-and-multiple-accounts--net-22574" target="_blank">A blog by Jeffrey Way</a>
   <a href="http://stackoverflow.com/questions/4220416/can-i-specify-multiple-users-for-myself-in-gitconfig" target="_blank">A question from StackOverflow</a>
