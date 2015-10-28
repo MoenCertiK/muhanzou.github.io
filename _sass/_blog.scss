@@ -32,6 +32,16 @@
 #blog-container {
   text-align: center;
   font-size: 1.2rem;
+
+  @for $i from 1 through 20 {
+    li:nth-child(#{$i}) {
+      .blog-link {
+        &:hover {
+          color: hsla(random(365), 90, 50, 0.9);
+        }
+      }
+    }
+  }
 }
 
 span.date {
@@ -42,9 +52,6 @@ span.date {
 
 .blog-link {
   text-decoration: none;
-  &:hover {
-    color: #f75d59;
-  }
 }
 
 .posts {
