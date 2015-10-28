@@ -42,10 +42,13 @@ span.date {
 
 .blog-link {
   text-decoration: none;
+  &:hover {
+    color: #f75d59;
+  }
 }
 
 .posts {
-  width: 500px;
+  width: 600px;
   margin: 0 auto;
   list-style: none;
   text-align: left;
