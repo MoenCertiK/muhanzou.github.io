@@ -5,3 +5,7 @@
 #   git config --global core.excludesfile ~/.gitignore_global
 
 .DS_Store
+node_modules/
+_site/
+.sass-cache/
+.jekyll-metadata
