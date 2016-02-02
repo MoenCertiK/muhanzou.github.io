@@ -1,14 +1,23 @@
-var webpack = require('webpack'),
-    path    = require('path');
+const path              = require('path');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const autoprefixer     = require('autoprefixer');
 
-var DIST_DIR = path.resolve(__dirname, 'javascripts'),
-    SRC_DIR  = path.resolve(__dirname, 'app');
+const DIST_DIR = path.resolve(__dirname, 'build');
+const SRC_DIR  = path.resolve(__dirname, 'app');
+
+const sassLoaders = [
+  'css-loader',
+  'postcss-loader',
+  'sass-loader'
+];
 
 var config = {
-  entry : SRC_DIR + '/main.js',
-  output: {
+  devtool: 'eval-source-map',
+  entry  : SRC_DIR + '/main.js',
+  output : {
     path    : DIST_DIR,
-    filename: 'bundle.js'
+    filename: 'bundle.js',
+    publicPath: '/public',
   },
   module: {
     loaders: [
@@ -20,8 +29,25 @@ var config = {
         query  : {
           presets: ['react','es2015']
         }
+      },
+      {
+        test  : /\.scss$/,
+        loader: ExtractTextPlugin.extract('style-loader', sassLoaders.join('!'))
+      },
+      {
+        test  : /\.(png|jpg)$/,
+        loader: 'file-loader'
       }
     ]
+  },
+  plugins: [
+    new ExtractTextPlugin("style.css")
+  ],
+  postcss: [
+    autoprefixer({ browsers: ['last 2 versions'] })
+  ],
+  sassLoader: {
+    includePaths: [path.resolve(__dirname, 'app')]
   }
 };
 

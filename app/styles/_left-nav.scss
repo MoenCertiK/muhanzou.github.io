@@ -1,0 +1,40 @@
+#left-nav {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 15%;
+  box-shadow: .1em 0 .5em #ccc;
+  font-size: 1.5em;
+  padding-top: .1em;
+  padding-right: .5em;
+  text-align: right;
+  .active {
+    font-size: 1.2em;
+    font-weight: 600;
+  }
+  li {
+    cursor: pointer;
+    padding: 1px 0;
+    transition-property: font-size, color;
+    transition-duration: .5s;
+  }
+  @for $i from 1 through 20 {
+    li:nth-child(#{$i}) {
+      &:hover {
+        font-size: 1.2em;
+        color: hsla(random(365), 90, 50, 0.9);
+      }
+    }
+  }
+}
+
+#back-home-arrow {
+  text-decoration: none;
+  color: #bcc6cc;
+  transition-property: font-size, color;
+  transition-duration: .5s;
+  &:hover {
+    color: #6D7B8D;
+    font-size: 1.3em;
+  }
+}
