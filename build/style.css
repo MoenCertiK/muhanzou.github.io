@@ -18,64 +18,64 @@
     transition-duration: .5s; }
   #left-nav li:nth-child(1):hover {
     font-size: 1.2em;
-    color: rgba(242, 13, 189, 0.9); }
+    color: rgba(13, 143, 242, 0.9); }
   #left-nav li:nth-child(2):hover {
     font-size: 1.2em;
-    color: rgba(242, 89, 13, 0.9); }
+    color: rgba(13, 242, 66, 0.9); }
   #left-nav li:nth-child(3):hover {
     font-size: 1.2em;
-    color: rgba(143, 242, 13, 0.9); }
+    color: rgba(13, 124, 242, 0.9); }
   #left-nav li:nth-child(4):hover {
     font-size: 1.2em;
-    color: rgba(170, 242, 13, 0.9); }
+    color: rgba(177, 242, 13, 0.9); }
   #left-nav li:nth-child(5):hover {
     font-size: 1.2em;
-    color: rgba(13, 181, 242, 0.9); }
+    color: rgba(62, 242, 13, 0.9); }
   #left-nav li:nth-child(6):hover {
     font-size: 1.2em;
-    color: rgba(13, 242, 150, 0.9); }
+    color: rgba(13, 105, 242, 0.9); }
   #left-nav li:nth-child(7):hover {
     font-size: 1.2em;
-    color: rgba(13, 177, 242, 0.9); }
+    color: rgba(242, 13, 101, 0.9); }
   #left-nav li:nth-child(8):hover {
     font-size: 1.2em;
-    color: rgba(13, 242, 97, 0.9); }
+    color: rgba(242, 13, 108, 0.9); }
   #left-nav li:nth-child(9):hover {
     font-size: 1.2em;
-    color: rgba(170, 13, 242, 0.9); }
+    color: rgba(13, 242, 154, 0.9); }
   #left-nav li:nth-child(10):hover {
     font-size: 1.2em;
-    color: rgba(13, 242, 131, 0.9); }
+    color: rgba(82, 242, 13, 0.9); }
   #left-nav li:nth-child(11):hover {
     font-size: 1.2em;
-    color: rgba(108, 13, 242, 0.9); }
+    color: rgba(177, 13, 242, 0.9); }
   #left-nav li:nth-child(12):hover {
     font-size: 1.2em;
-    color: rgba(185, 13, 242, 0.9); }
+    color: rgba(242, 13, 85, 0.9); }
   #left-nav li:nth-child(13):hover {
     font-size: 1.2em;
-    color: rgba(13, 242, 66, 0.9); }
+    color: rgba(200, 242, 13, 0.9); }
   #left-nav li:nth-child(14):hover {
     font-size: 1.2em;
-    color: rgba(43, 13, 242, 0.9); }
+    color: rgba(47, 13, 242, 0.9); }
   #left-nav li:nth-child(15):hover {
     font-size: 1.2em;
-    color: rgba(13, 242, 66, 0.9); }
+    color: rgba(242, 13, 97, 0.9); }
   #left-nav li:nth-child(16):hover {
     font-size: 1.2em;
-    color: rgba(13, 143, 242, 0.9); }
+    color: rgba(13, 242, 193, 0.9); }
   #left-nav li:nth-child(17):hover {
     font-size: 1.2em;
-    color: rgba(235, 13, 242, 0.9); }
+    color: rgba(242, 24, 13, 0.9); }
   #left-nav li:nth-child(18):hover {
     font-size: 1.2em;
-    color: rgba(135, 13, 242, 0.9); }
+    color: rgba(13, 242, 185, 0.9); }
   #left-nav li:nth-child(19):hover {
     font-size: 1.2em;
-    color: rgba(242, 43, 13, 0.9); }
+    color: rgba(24, 13, 242, 0.9); }
   #left-nav li:nth-child(20):hover {
     font-size: 1.2em;
-    color: rgba(13, 28, 242, 0.9); }
+    color: rgba(13, 43, 242, 0.9); }
 
 #back-home-arrow {
   text-decoration: none;
@@ -87,6 +87,14 @@
     font-size: 1.3em; }
 
 #show-place {
-  margin: 35px 50px 50px 250px;
+  margin: 25px 50px 50px 250px;
   min-height: 400px;
   border: 1px solid #ccc; }
+
+article {
+  padding: 0 10px;
+  font-size: 1.1em;
+  font-family: Helvetica, Arial, sans-serif; }
+  article span.title {
+    font-family: Roboto, sans-serif;
+    font-size: 2em; }
