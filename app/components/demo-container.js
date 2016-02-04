@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import StartPage from './start-page';
-import HanoiTower from './demos/hanoi-tower';
+import HanoiTower from './demos/hanoi-tower/hanoi-tower';
 
 class DemoContainer extends Component {
   constructor(props) {

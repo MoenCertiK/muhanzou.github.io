@@ -1,0 +1,14 @@
+div.tower-board {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 700px;
+  height: 200px;
+  margin: 10px auto;
+}
+
+#game-status {
+  width: 200px;
+  margin: 10px auto;
+  text-align: center;
+}
