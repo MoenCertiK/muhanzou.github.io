@@ -1,0 +1,25 @@
+ul.tower {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  width: 200px;
+  height: 150px;
+  border-bottom: 10px solid #ccc;
+  margin: 1px 5px;
+  position: relative;
+  &::before {
+    content: ' ';
+    border: 1px solid #ccc;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 50%;
+  }
+  &.dist {
+    border-bottom: 10px solid #1589FF;
+    &::before {
+      border: 1px solid #1589FF;
+    }
+  }
+}
